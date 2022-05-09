@@ -133,7 +133,7 @@ It will show file is still there, so as you see that each instance of `ubuntu` c
 
 **Made with ❤ by Mohamad Oghli**
 
-I will update on it so check the GitHub repository.
+I will update on this tutorial so check the GitHub repository.
 
 Email:
 `mhd.sh.oghli@gmail.com`
