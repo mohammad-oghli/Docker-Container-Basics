@@ -1,6 +1,9 @@
 # Docker Basic Commands
-### Sets of commands for using Docker on Centos linux distribution:
+### Sets of commands for using Docker on CentOS linux distribution:
 **Note**: _it's recommended to run this commands as `root` user or you should insert `sudo` before each command_.
+
+You can check how to install Docker on `CentOS` linux from Docker [Documentation](https://docs.docker.com/engine/install/centos/).
+
 
 Start Docker platform on your local machine:
 
