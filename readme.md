@@ -1,4 +1,4 @@
-# Docker basic commands
+# Docker Basic Commands
 ### Sets of commands for using Docker on Centos linux distribution:
 **Note**: _it's recommended to run this commands as `root` user or you should insert `sudo` before each command_.
 
@@ -45,7 +45,7 @@ ubuntu        latest    d2e4e1f51132   9 days ago     77.8MB
 hello-world   latest    feb5d9fea6a5   7 months ago   13.3kB
 </pre>
 
-Get container `image` ubuntu locally or pull it from Docker hub then Create a container from the image and start the container on your machine then enter the interactive bash remotely on the container:
+Get `ubuntu` container image locally or pull it from Docker hub then create a new container from the image and start the container on your machine then enter the interactive bash remotely on the container:
 
 `docker run -it ubuntu bash`
 
@@ -83,7 +83,7 @@ It will output :
 
 `ubunto container instance`
 
-Now after we create the new directory and file on ubuntu container we will exit from this container it will stop running directly:
+Now after we create the new directory and file on `ubuntu` container we will exit from this container it will stop running directly:
 
 `exit`
 
@@ -99,7 +99,7 @@ If we check the home directory now:
 
 `ls -asl home`
 
-We will not find lab directory and the file we created previously because each time we run ubuntu image we create new instance of the container.
+We will not find `lab` directory and the file we created previously because each time we run `ubuntu` image we create new instance of the container.
 
 we can check that by running:
 
@@ -107,14 +107,13 @@ we can check that by running:
 
 It will show these instances of `ubuntu` container:
 
-`CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
-91582e45d7cc   ubuntu        "bash"     4 minutes ago    Exited (0) 11 seconds ago             agitated_pascal`
-
-`bc56e9119461   ubuntu        "bash"     20 minutes ago   Exited (0) 7 minutes ago              gracious_agnesi`
+<pre>CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+bc56e9119461   ubuntu        &quot;bash&quot;     20 minutes ago   Exited (0) 7 minutes ago              gracious_agnesi
+</pre>
  
-To check the previous ubuntu container instance which we created lab directory on it:
+To check the previous `ubuntu` container instance which we created `lab` directory on it:
 
-First we start the ubuntu container instance we can find the name of the instance from the table `gracious_agnesi`:
+First we start `ubuntu` container instance we can find the name of the instance from the table `gracious_agnesi`:
 
 `docker start gracious_agnesi`
 
@@ -126,11 +125,11 @@ Now we can check the current container instance directory:
 
 `ls home -asl`
 
-It will show that the lab directory there then we check if the file container.txt is there:
+It will show that the lab directory there then we check if the file `container.txt` is there:
 
 `ls home/lab -asl`
 
-It will show the file is still there, so as you see that each instance of `ubuntu` container has it's own state also it's separated from each other and that's one of the important features of containers technology.
+It will show file is still there, so as you see that each instance of `ubuntu` container has its own state also it's separated from each other and that's one of the important features of containers technology.
 
 **Made with ❤ by Mohamad Oghli**
 
