@@ -111,6 +111,7 @@ we can check that by running:
 It will show these instances of `ubuntu` container:
 
 <pre>CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+91582e45d7cc   ubuntu        &quot;bash&quot;     4 minutes ago    Exited (0) 11 seconds ago             agitated_pascal
 bc56e9119461   ubuntu        &quot;bash&quot;     20 minutes ago   Exited (0) 7 minutes ago              gracious_agnesi
 </pre>
  
